@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Munki Manifest Selector' target in the 'Munki Manifest Selector' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

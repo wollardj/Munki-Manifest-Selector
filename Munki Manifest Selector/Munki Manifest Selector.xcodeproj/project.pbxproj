@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D445859B16AC7D4A00626525 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445859A16AC7D4A00626525 /* Cocoa.framework */; };
+		D44585A516AC7D4A00626525 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D44585A316AC7D4A00626525 /* InfoPlist.strings */; };
+		D44585A716AC7D4A00626525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D44585A616AC7D4A00626525 /* main.m */; };
+		D44585AB16AC7D4A00626525 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D44585A916AC7D4A00626525 /* Credits.rtf */; };
+		D44585AE16AC7D4A00626525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D44585AD16AC7D4A00626525 /* AppDelegate.m */; };
+		D44585B116AC7D4A00626525 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44585AF16AC7D4A00626525 /* MainMenu.xib */; };
+		D44585B916AC7D4A00626525 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44585B816AC7D4A00626525 /* SenTestingKit.framework */; };
+		D44585BA16AC7D4A00626525 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445859A16AC7D4A00626525 /* Cocoa.framework */; };
+		D44585C216AC7D4A00626525 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D44585C016AC7D4A00626525 /* InfoPlist.strings */; };
+		D44585C516AC7D4B00626525 /* Munki_Manifest_SelectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44585C416AC7D4B00626525 /* Munki_Manifest_SelectorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D44585BB16AC7D4A00626525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D445858D16AC7D4A00626525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D445859516AC7D4A00626525;
+			remoteInfo = "Munki Manifest Selector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D445859616AC7D4A00626525 /* Munki Manifest Selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Munki Manifest Selector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D445859A16AC7D4A00626525 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D445859D16AC7D4A00626525 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D445859E16AC7D4A00626525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D445859F16AC7D4A00626525 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D44585A216AC7D4A00626525 /* Munki Manifest Selector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Munki Manifest Selector-Info.plist"; sourceTree = "<group>"; };
+		D44585A416AC7D4A00626525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D44585A616AC7D4A00626525 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		D44585A816AC7D4A00626525 /* Munki Manifest Selector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Munki Manifest Selector-Prefix.pch"; sourceTree = "<group>"; };
+		D44585AA16AC7D4A00626525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D44585AC16AC7D4A00626525 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		D44585AD16AC7D4A00626525 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		D44585B016AC7D4A00626525 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D44585B716AC7D4A00626525 /* Munki Manifest SelectorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Munki Manifest SelectorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44585B816AC7D4A00626525 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D44585BF16AC7D4A00626525 /* Munki Manifest SelectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Munki Manifest SelectorTests-Info.plist"; sourceTree = "<group>"; };
+		D44585C116AC7D4A00626525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D44585C316AC7D4B00626525 /* Munki_Manifest_SelectorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Munki_Manifest_SelectorTests.h; sourceTree = "<group>"; };
+		D44585C416AC7D4B00626525 /* Munki_Manifest_SelectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Munki_Manifest_SelectorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D445859316AC7D4A00626525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D445859B16AC7D4A00626525 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44585B316AC7D4A00626525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44585B916AC7D4A00626525 /* SenTestingKit.framework in Frameworks */,
+				D44585BA16AC7D4A00626525 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D445858B16AC7D4A00626525 = {
+			isa = PBXGroup;
+			children = (
+				D44585A016AC7D4A00626525 /* Munki Manifest Selector */,
+				D44585BD16AC7D4A00626525 /* Munki Manifest SelectorTests */,
+				D445859916AC7D4A00626525 /* Frameworks */,
+				D445859716AC7D4A00626525 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D445859716AC7D4A00626525 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D445859616AC7D4A00626525 /* Munki Manifest Selector.app */,
+				D44585B716AC7D4A00626525 /* Munki Manifest SelectorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D445859916AC7D4A00626525 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D445859A16AC7D4A00626525 /* Cocoa.framework */,
+				D44585B816AC7D4A00626525 /* SenTestingKit.framework */,
+				D445859C16AC7D4A00626525 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D445859C16AC7D4A00626525 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D445859D16AC7D4A00626525 /* AppKit.framework */,
+				D445859E16AC7D4A00626525 /* CoreData.framework */,
+				D445859F16AC7D4A00626525 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D44585A016AC7D4A00626525 /* Munki Manifest Selector */ = {
+			isa = PBXGroup;
+			children = (
+				D44585AC16AC7D4A00626525 /* AppDelegate.h */,
+				D44585AD16AC7D4A00626525 /* AppDelegate.m */,
+				D44585AF16AC7D4A00626525 /* MainMenu.xib */,
+				D44585A116AC7D4A00626525 /* Supporting Files */,
+			);
+			path = "Munki Manifest Selector";
+			sourceTree = "<group>";
+		};
+		D44585A116AC7D4A00626525 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D44585A216AC7D4A00626525 /* Munki Manifest Selector-Info.plist */,
+				D44585A316AC7D4A00626525 /* InfoPlist.strings */,
+				D44585A616AC7D4A00626525 /* main.m */,
+				D44585A816AC7D4A00626525 /* Munki Manifest Selector-Prefix.pch */,
+				D44585A916AC7D4A00626525 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D44585BD16AC7D4A00626525 /* Munki Manifest SelectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D44585C316AC7D4B00626525 /* Munki_Manifest_SelectorTests.h */,
+				D44585C416AC7D4B00626525 /* Munki_Manifest_SelectorTests.m */,
+				D44585BE16AC7D4A00626525 /* Supporting Files */,
+			);
+			path = "Munki Manifest SelectorTests";
+			sourceTree = "<group>";
+		};
+		D44585BE16AC7D4A00626525 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D44585BF16AC7D4A00626525 /* Munki Manifest SelectorTests-Info.plist */,
+				D44585C016AC7D4A00626525 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D445859516AC7D4A00626525 /* Munki Manifest Selector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44585C816AC7D4B00626525 /* Build configuration list for PBXNativeTarget "Munki Manifest Selector" */;
+			buildPhases = (
+				D445859216AC7D4A00626525 /* Sources */,
+				D445859316AC7D4A00626525 /* Frameworks */,
+				D445859416AC7D4A00626525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Munki Manifest Selector";
+			productName = "Munki Manifest Selector";
+			productReference = D445859616AC7D4A00626525 /* Munki Manifest Selector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D44585B616AC7D4A00626525 /* Munki Manifest SelectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44585CB16AC7D4B00626525 /* Build configuration list for PBXNativeTarget "Munki Manifest SelectorTests" */;
+			buildPhases = (
+				D44585B216AC7D4A00626525 /* Sources */,
+				D44585B316AC7D4A00626525 /* Frameworks */,
+				D44585B416AC7D4A00626525 /* Resources */,
+				D44585B516AC7D4A00626525 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44585BC16AC7D4A00626525 /* PBXTargetDependency */,
+			);
+			name = "Munki Manifest SelectorTests";
+			productName = "Munki Manifest SelectorTests";
+			productReference = D44585B716AC7D4A00626525 /* Munki Manifest SelectorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D445858D16AC7D4A00626525 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Denison University";
+			};
+			buildConfigurationList = D445859016AC7D4A00626525 /* Build configuration list for PBXProject "Munki Manifest Selector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D445858B16AC7D4A00626525;
+			productRefGroup = D445859716AC7D4A00626525 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D445859516AC7D4A00626525 /* Munki Manifest Selector */,
+				D44585B616AC7D4A00626525 /* Munki Manifest SelectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D445859416AC7D4A00626525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44585A516AC7D4A00626525 /* InfoPlist.strings in Resources */,
+				D44585AB16AC7D4A00626525 /* Credits.rtf in Resources */,
+				D44585B116AC7D4A00626525 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44585B416AC7D4A00626525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44585C216AC7D4A00626525 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D44585B516AC7D4A00626525 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D445859216AC7D4A00626525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44585A716AC7D4A00626525 /* main.m in Sources */,
+				D44585AE16AC7D4A00626525 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44585B216AC7D4A00626525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44585C516AC7D4B00626525 /* Munki_Manifest_SelectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D44585BC16AC7D4A00626525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D445859516AC7D4A00626525 /* Munki Manifest Selector */;
+			targetProxy = D44585BB16AC7D4A00626525 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D44585A316AC7D4A00626525 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44585A416AC7D4A00626525 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D44585A916AC7D4A00626525 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44585AA16AC7D4A00626525 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = SOURCE_ROOT;
+		};
+		D44585AF16AC7D4A00626525 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44585B016AC7D4A00626525 /* en */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D44585C016AC7D4A00626525 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44585C116AC7D4A00626525 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D44585C616AC7D4B00626525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		D44585C716AC7D4B00626525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		D44585C916AC7D4B00626525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Munki Manifest Selector/Munki Manifest Selector-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Munki Manifest Selector/Munki Manifest Selector-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D44585CA16AC7D4B00626525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Munki Manifest Selector/Munki Manifest Selector-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Munki Manifest Selector/Munki Manifest Selector-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D44585CC16AC7D4B00626525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Munki Manifest Selector.app/Contents/MacOS/Munki Manifest Selector";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Munki Manifest Selector/Munki Manifest Selector-Prefix.pch";
+				INFOPLIST_FILE = "Munki Manifest SelectorTests/Munki Manifest SelectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D44585CD16AC7D4B00626525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Munki Manifest Selector.app/Contents/MacOS/Munki Manifest Selector";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Munki Manifest Selector/Munki Manifest Selector-Prefix.pch";
+				INFOPLIST_FILE = "Munki Manifest SelectorTests/Munki Manifest SelectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D445859016AC7D4A00626525 /* Build configuration list for PBXProject "Munki Manifest Selector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44585C616AC7D4B00626525 /* Debug */,
+				D44585C716AC7D4B00626525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44585C816AC7D4B00626525 /* Build configuration list for PBXNativeTarget "Munki Manifest Selector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44585C916AC7D4B00626525 /* Debug */,
+				D44585CA16AC7D4B00626525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44585CB16AC7D4B00626525 /* Build configuration list for PBXNativeTarget "Munki Manifest SelectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44585CC16AC7D4B00626525 /* Debug */,
+				D44585CD16AC7D4B00626525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D445858D16AC7D4A00626525 /* Project object */;
+}
