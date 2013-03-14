@@ -17,6 +17,7 @@
 		D44585BA16AC7D4A00626525 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445859A16AC7D4A00626525 /* Cocoa.framework */; };
 		D44585C216AC7D4A00626525 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D44585C016AC7D4A00626525 /* InfoPlist.strings */; };
 		D44585C516AC7D4B00626525 /* Munki_Manifest_SelectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44585C416AC7D4B00626525 /* Munki_Manifest_SelectorTests.m */; };
+		D4B88FE216F1F69A0085472E /* MMMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B88FE116F1F69A0085472E /* MMMainWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		D44585C116AC7D4A00626525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D44585C316AC7D4B00626525 /* Munki_Manifest_SelectorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Munki_Manifest_SelectorTests.h; sourceTree = "<group>"; };
 		D44585C416AC7D4B00626525 /* Munki_Manifest_SelectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Munki_Manifest_SelectorTests.m; sourceTree = "<group>"; };
+		D4B88FE016F1F69A0085472E /* MMMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMainWindow.h; sourceTree = "<group>"; };
+		D4B88FE116F1F69A0085472E /* MMMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMainWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				D44585AC16AC7D4A00626525 /* AppDelegate.h */,
 				D44585AD16AC7D4A00626525 /* AppDelegate.m */,
 				D44585AF16AC7D4A00626525 /* MainMenu.xib */,
+				D4B88FE016F1F69A0085472E /* MMMainWindow.h */,
+				D4B88FE116F1F69A0085472E /* MMMainWindow.m */,
 				D44585A116AC7D4A00626525 /* Supporting Files */,
 			);
 			path = "Munki Manifest Selector";
@@ -263,6 +268,7 @@
 			files = (
 				D44585A716AC7D4A00626525 /* main.m in Sources */,
 				D44585AE16AC7D4A00626525 /* AppDelegate.m in Sources */,
+				D4B88FE216F1F69A0085472E /* MMMainWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

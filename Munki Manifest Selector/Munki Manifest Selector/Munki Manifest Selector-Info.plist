@@ -33,6 +33,8 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>Manifests URL</key>
-	<string>http://localhost/Manifests.plist</string>
+	<string>http://example.com/Manifests.plist</string>
+	<key>LSUIElement</key>
+	<true/>
 </dict>
 </plist>

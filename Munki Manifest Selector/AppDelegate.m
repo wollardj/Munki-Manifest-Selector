@@ -18,13 +18,10 @@
 {
     [self setManifestDict: [NSMutableDictionary dictionary]];
     NSArray *arguments = [[NSProcessInfo processInfo] arguments];
-
-    // Make sure the window is able to popup in front of any other window.
-    [[self window] center];
-    [[self window] setLevel:NSScreenSaverWindowLevel];
     
     // Hide all other applications.
-    [NSApp hideOtherApplications:self];
+    //[NSApp hideOtherApplications:self];
+    [NSApp activateIgnoringOtherApps:YES];
 
 
     // set the default values
@@ -168,8 +165,9 @@
 
 - (IBAction)useSelectedManifest:(id)aSender
 {
-    NSArray *manifestNameParts = [self.selectedManifestName componentsSeparatedByString:@"/"];
-    NSString *templateManifestName = [NSString stringWithFormat:@"__%@Template", [manifestNameParts lastObject]];
+//    NSArray *manifestNameParts = [self.selectedManifestName componentsSeparatedByString:@"/"];
+//    NSString *templateManifestName = [NSString stringWithFormat:@"__%@Template", [manifestNameParts lastObject]];
+    NSString *templateManifestName = [NSString stringWithFormat:@"%@/generic", self.selectedManifestName];
     [manifestDict setObject:templateManifestName forKey:@"ClientIdentifier"];
     
     if ([[manifestDict objectForKey:@"DaysBetweenNotifications"] isEqualToString:@"Hourly"])
