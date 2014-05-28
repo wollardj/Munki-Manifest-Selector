@@ -91,8 +91,9 @@
         || [[NSFileManager defaultManager] fileExistsAtPath:targetVolume isDirectory:&isDir] == NO
         || isDir == NO)
     {
-        NSLog(@"You must specify a valid -targetVolume");
-        exit(MMS_MISSING_OR_INVALID_TARGET_VOLUME_EXIT_CODE);
+        targetVolume = @"/";
+        NSLog(@"Missing -targetVolume argument. Using default value '/'");
+        // exit(MMS_MISSING_OR_INVALID_TARGET_VOLUME_EXIT_CODE);
     }
 }
 
@@ -138,14 +139,15 @@
                      andMessage:@"Check the value of 'Manifests URL' within Info.plist. The the value is either incorrect, or the plist it points to is invalid."
                   usingExitCode:MMS_INVALID_PLIST_VALUE_EXIT_CODE];
     }
-    
-    // Add a placeholder of '-' to the list and sort it alphabetically.
-    NSMutableArray *manifests = [[aDict objectForKey:@"ManifestGroups"] mutableCopy];
-    [manifests addObject:@"-"];
-    NSArray *sortedManifests = [manifests sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-    [manifestPopupMenu removeAllItems];
-    [manifestPopupMenu addItemsWithTitles:sortedManifests];
-    [self setSelectedManifestName:nil];
+    else {
+        // Add a placeholder of '-' to the list and sort it alphabetically.
+        NSMutableArray *manifests = [[aDict objectForKey:@"ManifestGroups"] mutableCopy];
+        [manifests addObject:@"-"];
+        NSArray *sortedManifests = [manifests sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        [manifestPopupMenu removeAllItems];
+        [manifestPopupMenu addItemsWithTitles:sortedManifests];
+        [self setSelectedManifestName:nil];
+    }
 }
 
 
